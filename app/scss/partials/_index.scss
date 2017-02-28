@@ -1,0 +1,66 @@
+/* Index page styles
+-------------------------------------------------- */
+// Welcome-section
+.welcome-section {
+  background: $main-dark;
+  padding-top: 5rem;
+
+  h2 {
+    color: #fff;
+    text-align: right;
+    span {
+      display: block;
+    }
+  }
+  .subheader {
+    color: #ccc;
+    text-align: right;
+    margin-bottom: 1rem;
+  }
+  .finder {
+    width: 100%;
+    margin: 0 auto;
+
+    input {
+      float: left;
+      width: 70%;
+      height: 50px;
+      font-size: 1rem;
+    }
+    button {
+      width: 29%;
+      height: 50px;
+      margin-left: 1%;
+      font-size: 1rem;
+      background: $yellow;
+      color: #fff;
+    }
+  }
+  .steps {
+    height: 100px;
+  }
+
+
+  /* Tablets */
+  @media only screen and (min-width: 768px) {
+    h2 {
+      text-align: center;
+      span {
+        display: inline;
+      }
+    }
+    .subheader {
+      text-align: center;
+    }
+    .finder {
+      width: 650px;
+    }
+  }
+
+
+  /* Desktop and larger */
+  @media only screen and (min-width: 992px) {
+
+  }
+
+}

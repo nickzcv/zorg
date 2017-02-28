@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&subset=cyrillic-ext");
 /* Base styles
 -------------------------------------------------- */
 html {
@@ -117,7 +118,7 @@ nav.navigation ul li a:hover {
   color: #ccc; }
 
 nav.navigation ul li a.active {
-  border-bottom: 3px solid #f53c0d; }
+  border-bottom: 3px solid #e8500e; }
 
 @media only screen and (min-width: 768px) {
   nav.navigation.hidden {
@@ -170,13 +171,12 @@ nav.navigation ul li a.active {
   /* Desktop and larger */ }
 
 .welcome-section h2 {
+  font-family: 'Roboto Slab', serif;
   color: #fff;
-  text-align: right; }
+  text-align: right;
+  font-size: 35px; }
 
-.welcome-section h2 span {
-  display: block; }
-
-.welcome-section .subheader {
+.welcome-section .sub-header {
   color: #ccc;
   text-align: right;
   margin-bottom: 1rem; }
@@ -196,19 +196,21 @@ nav.navigation ul li a.active {
   height: 50px;
   margin-left: 1%;
   font-size: 1rem;
-  background: #f53c0d;
+  background: #e8500e;
   color: #fff; }
 
 .welcome-section .steps {
-  height: 100px; }
+  height: 100px;
+  width: 500px;
+  background: url(../img/steps.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 100px auto; }
 
 @media only screen and (min-width: 768px) {
-  .welcome-section h2 {
-    text-align: center; }
-  .welcome-section h2 span {
-    display: inline; }
-  .welcome-section .subheader {
-    text-align: center; }
+  .welcome-section h2, .welcome-section .sub-header {
+    text-align: center;
+    padding: 0.5rem 0; }
   .welcome-section .finder {
     width: 650px; } }
 

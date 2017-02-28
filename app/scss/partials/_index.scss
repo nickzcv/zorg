@@ -6,13 +6,12 @@
   padding-top: 5rem;
 
   h2 {
+    font-family: 'Roboto Slab', serif;
     color: #fff;
     text-align: right;
-    span {
-      display: block;
-    }
+    font-size: 35px;
   }
-  .subheader {
+  .sub-header {
     color: #ccc;
     text-align: right;
     margin-bottom: 1rem;
@@ -38,19 +37,19 @@
   }
   .steps {
     height: 100px;
+    width: 500px;
+    background: url(../img/steps.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 100px auto;
   }
 
 
   /* Tablets */
   @media only screen and (min-width: 768px) {
-    h2 {
+    h2, .sub-header  {
       text-align: center;
-      span {
-        display: inline;
-      }
-    }
-    .subheader {
-      text-align: center;
+      padding: 0.5rem 0;
     }
     .finder {
       width: 650px;

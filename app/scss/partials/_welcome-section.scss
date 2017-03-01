@@ -8,7 +8,7 @@
     font-family: 'Roboto Slab', serif;
     color: #fff;
     text-align: right;
-    font-size: 35px;
+    font-size: 30px;
   }
   .sub-header {
     color: #ccc;
@@ -45,6 +45,9 @@
 
   /* Tablets */
   @media only screen and (min-width: 768px) {
+    h2 {
+      font-size: 35px;
+    }
     h2, .sub-header  {
       text-align: center;
       padding: 0.5rem 0;

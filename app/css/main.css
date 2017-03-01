@@ -79,7 +79,7 @@ header .hamburger.closeBtn span:before {
   header .logo a {
     display: inline-block;
     text-indent: -9999px;
-    width: 180px;
+    width: 160px;
     background: url(../img/zakuski.svg) no-repeat;
     background-size: contain;
     background-position: center; } }
@@ -176,7 +176,7 @@ nav.navigation ul li a.active {
   font-family: 'Roboto Slab', serif;
   color: #fff;
   text-align: right;
-  font-size: 35px; }
+  font-size: 30px; }
 
 .welcome-section .sub-header {
   color: #ccc;
@@ -209,6 +209,8 @@ nav.navigation ul li a.active {
   margin: 50px auto 100px; }
 
 @media only screen and (min-width: 768px) {
+  .welcome-section h2 {
+    font-size: 35px; }
   .welcome-section h2, .welcome-section .sub-header {
     text-align: center;
     padding: 0.5rem 0; }

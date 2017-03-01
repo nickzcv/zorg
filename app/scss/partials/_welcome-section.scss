@@ -35,10 +35,9 @@
     }
   }
   .steps {
-    height: 200px;
-    width: 650px;
+    height: 152px;
+    max-width: 650px;
     background: url(../img/steps.svg) no-repeat;
-    background-size: contain;
     background-position: center;
     margin: 50px auto 100px;
   }

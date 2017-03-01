@@ -48,7 +48,7 @@ header .logo a {
   height: 80px;
   width: 115px;
   text-indent: -9999px;
-  background: url(../img/logo-white.svg) no-repeat;
+  background: url(../img/zakuski.svg) no-repeat;
   background-size: contain;
   background-position: center; }
 
@@ -64,21 +64,23 @@ header .hamburger.closeBtn span:before {
   content: "\f2d7"; }
 
 @media only screen and (min-width: 768px) {
+  header .logo {
+    float: left; }
   header .logo a {
-    display: block;
+    display: inline-block;
     text-indent: -9999px;
-    height: 70px;
-    background: url(../img/logo-white.svg) no-repeat;
-    background-size: cover;
-    background-position: center; } }
+    height: 50px;
+    width: 130px;
+    background: url(../img/zakuski.svg) no-repeat;
+    background-position: center;
+    margin-left: 25px; } }
 
 @media only screen and (min-width: 992px) {
   header .logo a {
     display: inline-block;
     text-indent: -9999px;
-    height: 90px;
-    width: 220px;
-    background: url(../img/logo-white.svg) no-repeat;
+    width: 180px;
+    background: url(../img/zakuski.svg) no-repeat;
     background-size: contain;
     background-position: center; } }
 
@@ -162,7 +164,7 @@ nav.navigation ul li a.active {
   nav.navigation ul li {
     margin: 1rem; } }
 
-/* Index page styles
+/* Welcome-section styles
 -------------------------------------------------- */
 .welcome-section {
   background: #202124;
@@ -200,19 +202,47 @@ nav.navigation ul li a.active {
   color: #fff; }
 
 .welcome-section .steps {
-  height: 100px;
-  width: 500px;
-  background: url(../img/steps.png) no-repeat;
+  height: 200px;
+  width: 650px;
+  background: url(../img/steps.svg) no-repeat;
   background-size: contain;
   background-position: center;
-  margin: 100px auto; }
+  margin: 50px auto 100px; }
 
 @media only screen and (min-width: 768px) {
   .welcome-section h2, .welcome-section .sub-header {
     text-align: center;
     padding: 0.5rem 0; }
+  .welcome-section .sub-header {
+    text-align: center;
+    padding: 0.5rem 0; }
   .welcome-section .finder {
-    width: 650px; } }
+    width: 600px; } }
+
+@media only screen and (min-width: 992px) {
+  .welcome-section .sub-header {
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 16px; } }
+
+/* Welcome-section styles
+-------------------------------------------------- */
+.text-section {
+  /* Tablets */
+  /* Desktop and larger */ }
+
+.text-section .light {
+  background: transparent;
+  border-bottom: 1px solid #f5f5f5;
+  color: #000; }
+
+.text-section .text {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1.1rem; }
+
+.text-section a {
+  color: #e8500e; }
 
 /* icons
   'partials/icons/_ionicons-variables',

@@ -1,6 +1,5 @@
-/* Index page styles
+/* Welcome-section styles
 -------------------------------------------------- */
-// Welcome-section
 .welcome-section {
   background: $main-dark;
   padding-top: 5rem;
@@ -36,12 +35,12 @@
     }
   }
   .steps {
-    height: 100px;
-    width: 500px;
-    background: url(../img/steps.png) no-repeat;
+    height: 200px;
+    width: 650px;
+    background: url(../img/steps.svg) no-repeat;
     background-size: contain;
     background-position: center;
-    margin: 100px auto;
+    margin: 50px auto 100px;
   }
 
 
@@ -51,15 +50,23 @@
       text-align: center;
       padding: 0.5rem 0;
     }
+    .sub-header  {
+      text-align: center;
+      padding: 0.5rem 0;
+    }
     .finder {
-      width: 650px;
+      width: 600px;
     }
   }
 
 
   /* Desktop and larger */
   @media only screen and (min-width: 992px) {
-
+    .sub-header  {
+      text-align: center;
+      padding: 0.5rem 0;
+      font-size: 16px;
+    }
   }
 
 }

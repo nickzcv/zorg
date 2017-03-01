@@ -12,7 +12,7 @@ header {
       height: 80px;
       width: 115px;
       text-indent: -9999px;
-      background: url(../img/logo-white.svg) no-repeat;
+      background: url(../img/zakuski.svg) no-repeat;
       background-size: contain;
       background-position: center;
     }
@@ -34,14 +34,19 @@ header {
 
   /* Tablets */
   @media only screen and (min-width: 768px) {
-    .logo a {
-      display: block;
-      text-indent: -9999px;
-      height: 70px;
-      background: url(../img/logo-white.svg) no-repeat;
-      background-size: cover;
-      background-position: center;
+    .logo {
+      float: left;
+      a {
+        display: inline-block;
+        text-indent: -9999px;
+        height: 50px;
+        width: 130px;
+        background: url(../img/zakuski.svg) no-repeat;
+        background-position: center;
+        margin-left: 25px;
+      }
     }
+
   }
 
 
@@ -50,9 +55,8 @@ header {
     .logo a{
       display: inline-block;
       text-indent: -9999px;
-      height: 90px;
-      width: 220px;
-      background: url(../img/logo-white.svg) no-repeat;
+      width: 180px;
+      background: url(../img/zakuski.svg) no-repeat;
       background-size: contain;
       background-position: center;
     }

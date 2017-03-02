@@ -127,7 +127,14 @@ nav.navigation ul li a.active {
   nav.navigation ul {
     margin: 0; }
   nav.navigation ul li {
-    margin: 1rem; } }
+    margin: 1rem; }
+  nav.navigation .languages .flag {
+    width: 50px;
+    height: 30px; }
+  nav.navigation .languages .eng {
+    background: green; }
+  nav.navigation .languages .bel {
+    background: red; } }
 
 /* Welcome-section styles
 -------------------------------------------------- */

@@ -52,6 +52,18 @@ nav.navigation {
         margin: 1rem;
       }
     }
+    .languages {
+      .flag {
+        width: 50px;
+        height: 30px;
+      }
+      .eng {
+        background: green;
+      }
+      .bel {
+        background: red;
+      }
+    }
 
   }
 

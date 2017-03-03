@@ -7,8 +7,6 @@ $main-dark: #202124;
 $light-gray: #f5f5f5;
 $yellow: #e8500e;
 
-
-
 html {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #000;
@@ -33,9 +31,29 @@ a {
     text-decoration: none;
   }
 }
-.price:after {
-  content: ' p.'; // currency symbol
-  font-weight: 400;
-  font-size: 0.80rem;
-}
 
+// Style the Autocomplete widget
+.pac-container {
+  .pac-item {
+    cursor: pointer;
+    padding: 0 8px;
+    line-height: 40px;
+    font-size: 0.8rem;
+
+    .pac-icon {
+      background-image: none!important;
+
+      &::before {
+        content: "\f455";
+        font-family: "Ionicons";
+        font-size: 1.4rem;
+        position: relative;
+        top: -5px;
+      }
+    }
+    .pac-item-query {
+      font-size: 1rem;
+    }
+
+  }
+}

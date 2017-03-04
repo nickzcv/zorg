@@ -26,12 +26,32 @@
       font-size: 1rem;
     }
     button {
-      width: 29%;
+      width: 19%;
       height: 50px;
       margin-left: 1%;
       font-size: 1rem;
       background: $yellow;
       color: #fff;
+
+      .icon {
+        display: none;
+      }
+    }
+    .navigator {
+      float: right;
+      width: 6%;
+      height: 40px;
+      margin: 5px;
+      background: url(../img/icons/navigator.svg) no-repeat;
+      background-size: contain;
+      background-position: center;
+
+      &:hover {
+        cursor: pointer;
+        background: url(../img/icons/navigator-hover.svg) no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
     }
   }
   .steps {
@@ -40,6 +60,14 @@
     background: url(../img/steps.svg) no-repeat;
     background-position: center;
     margin: 50px auto 100px;
+  }
+
+
+  /* SmartPhones */
+  @media only screen and (min-width: 450px) {
+    .finder .btn a {
+      display: inline-block;
+    }
   }
 
 

@@ -155,6 +155,7 @@ nav.navigation ul li a.active {
 .welcome-section {
   background: #202124;
   padding-top: 5rem;
+  /* SmartPhones */
   /* Tablets */
   /* Desktop and larger */ }
 
@@ -180,12 +181,30 @@ nav.navigation ul li a.active {
   font-size: 1rem; }
 
 .welcome-section .finder button {
-  width: 29%;
+  width: 19%;
   height: 50px;
   margin-left: 1%;
   font-size: 1rem;
   background: #e8500e;
   color: #fff; }
+
+.welcome-section .finder button .icon {
+  display: none; }
+
+.welcome-section .finder .navigator {
+  float: right;
+  width: 6%;
+  height: 40px;
+  margin: 5px;
+  background: url(../img/icons/navigator.svg) no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.welcome-section .finder .navigator:hover {
+  cursor: pointer;
+  background: url(../img/icons/navigator-hover.svg) no-repeat;
+  background-size: contain;
+  background-position: center; }
 
 .welcome-section .steps {
   height: 152px;
@@ -193,6 +212,10 @@ nav.navigation ul li a.active {
   background: url(../img/steps.svg) no-repeat;
   background-position: center;
   margin: 50px auto 100px; }
+
+@media only screen and (min-width: 450px) {
+  .welcome-section .finder .btn a {
+    display: inline-block; } }
 
 @media only screen and (min-width: 768px) {
   .welcome-section h2 {

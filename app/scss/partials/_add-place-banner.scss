@@ -1,0 +1,48 @@
+/* Welcome-section styles
+-------------------------------------------------- */
+.add-place-banner {
+  height: 200px;
+  margin: 1rem 0;
+
+  .earth {
+    width: 50%;
+    height: 200px;
+    float: left;
+    background: url(../img/add-place-banner.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .header {
+    float: right;
+    width: 50%;
+    font-family: 'Roboto Slab', serif;
+    color: $main-dark;
+    text-align: left;
+    font-size: 30px;
+    line-height: 150px;
+  }
+  .sub-header {
+    color: #666;
+    text-align: center;
+    padding: 0.5rem 0 1rem;
+  }
+
+  /* SmartPhones */
+  @media only screen and (min-width: 450px) {
+
+  }
+
+
+  /* Tablets */
+  @media only screen and (min-width: 768px) {
+
+
+  }
+
+
+  /* Desktop and larger */
+  @media only screen and (min-width: 992px) {
+
+  }
+
+}

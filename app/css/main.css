@@ -176,7 +176,7 @@ nav.navigation ul li a.active {
 
 .welcome-section .finder input {
   float: left;
-  width: 70%;
+  width: 65%;
   height: 50px;
   font-size: 1rem; }
 
@@ -193,7 +193,7 @@ nav.navigation ul li a.active {
 
 .welcome-section .finder .navigator {
   float: right;
-  width: 6%;
+  width: 10%;
   height: 40px;
   margin: 5px;
   background: url(../img/icons/navigator.svg) no-repeat;
@@ -215,6 +215,8 @@ nav.navigation ul li a.active {
 
 @media only screen and (min-width: 450px) {
   .welcome-section .finder .btn a {
+    display: inline-block; }
+  .welcome-section .finder .btn .icon {
     display: inline-block; } }
 
 @media only screen and (min-width: 768px) {
@@ -256,6 +258,29 @@ nav.navigation ul li a.active {
 
 .text-section a {
   color: #e8500e; }
+
+/* Welcome-section styles
+-------------------------------------------------- */
+.places {
+  /* SmartPhones */
+  /* Tablets */
+  /* Desktop and larger */ }
+
+.places.latest {
+  background: url(../img/zakuski.svg) no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.places.latest h2 {
+  font-family: 'Roboto Slab', serif;
+  color: #202124;
+  text-align: center;
+  font-size: 25px; }
+
+.places.latest .sub-header {
+  color: #666;
+  text-align: center;
+  padding: 0.5rem 0 1rem; }
 
 /* icons
   'partials/icons/_ionicons-variables',

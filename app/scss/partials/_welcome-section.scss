@@ -21,7 +21,7 @@
 
     input {
       float: left;
-      width: 70%;
+      width: 65%;
       height: 50px;
       font-size: 1rem;
     }
@@ -39,7 +39,7 @@
     }
     .navigator {
       float: right;
-      width: 6%;
+      width: 10%;
       height: 40px;
       margin: 5px;
       background: url(../img/icons/navigator.svg) no-repeat;
@@ -66,6 +66,9 @@
   /* SmartPhones */
   @media only screen and (min-width: 450px) {
     .finder .btn a {
+      display: inline-block;
+    }
+    .finder .btn .icon {
       display: inline-block;
     }
   }

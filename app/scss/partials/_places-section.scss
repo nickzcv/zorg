@@ -1,0 +1,42 @@
+/* Welcome-section styles
+-------------------------------------------------- */
+.places {
+  &.latest {
+    background: url(../img/zakuski.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    h2 {
+      font-family: 'Roboto Slab', serif;
+      color: $main-dark;
+      text-align: center;
+      font-size: 25px;
+    }
+    .sub-header {
+      color: #666;
+      text-align: center;
+      padding: 0.5rem 0 1rem;
+    }
+  }
+
+
+
+  /* SmartPhones */
+  @media only screen and (min-width: 450px) {
+
+  }
+
+
+  /* Tablets */
+  @media only screen and (min-width: 768px) {
+
+
+  }
+
+
+  /* Desktop and larger */
+  @media only screen and (min-width: 992px) {
+
+  }
+
+}

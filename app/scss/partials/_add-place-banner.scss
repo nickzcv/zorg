@@ -5,21 +5,16 @@
   margin: 1rem 0;
 
   .earth {
-    width: 50%;
-    height: 200px;
-    float: left;
-    background: url(../img/add-place-banner.svg) no-repeat;
-    background-size: contain;
-    background-position: center;
+    display: none;
   }
   .header {
     float: right;
-    width: 50%;
+    width: 100%;
     font-family: 'Roboto Slab', serif;
     color: $main-dark;
     text-align: left;
-    font-size: 30px;
-    line-height: 150px;
+    font-size: 20px;
+    margin-top: 50px;
   }
   .sub-header {
     color: #666;
@@ -29,14 +24,26 @@
 
   /* SmartPhones */
   @media only screen and (min-width: 450px) {
-
+    .earth {
+      display: block;
+      width: 50%;
+      height: 200px;
+      float: left;
+      background: url(../img/add-place-banner.svg) no-repeat;
+      background-size: contain;
+      background-position: 66%;
+    }
+    .header {
+      width: 50%;
+    }
   }
 
 
   /* Tablets */
   @media only screen and (min-width: 768px) {
-
-
+    .header {
+      font-size: 30px;
+    }
   }
 
 

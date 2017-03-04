@@ -104,9 +104,6 @@ header .hamburger.closeBtn span:before {
   /* Tablets */
   /* Desktop and larger */ }
 
-.footer .hashtag {
-  background: #000; }
-
 /* Navigation styles
 -------------------------------------------------- */
 nav.navigation {
@@ -301,26 +298,37 @@ nav.navigation ul li a.active {
   /* Desktop and larger */ }
 
 .add-place-banner .earth {
-  width: 50%;
-  height: 200px;
-  float: left;
-  background: url(../img/add-place-banner.svg) no-repeat;
-  background-size: contain;
-  background-position: center; }
+  display: none; }
 
 .add-place-banner .header {
   float: right;
-  width: 50%;
+  width: 100%;
   font-family: 'Roboto Slab', serif;
   color: #202124;
   text-align: left;
-  font-size: 30px;
-  line-height: 150px; }
+  font-size: 20px;
+  margin-top: 50px; }
 
 .add-place-banner .sub-header {
   color: #666;
   text-align: center;
   padding: 0.5rem 0 1rem; }
+
+@media only screen and (min-width: 450px) {
+  .add-place-banner .earth {
+    display: block;
+    width: 50%;
+    height: 200px;
+    float: left;
+    background: url(../img/add-place-banner.svg) no-repeat;
+    background-size: contain;
+    background-position: 66%; }
+  .add-place-banner .header {
+    width: 50%; } }
+
+@media only screen and (min-width: 768px) {
+  .add-place-banner .header {
+    font-size: 30px; } }
 
 /* icons
   'partials/icons/_ionicons-variables',

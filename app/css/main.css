@@ -305,9 +305,8 @@ nav.navigation ul li a.active {
   width: 100%;
   font-family: 'Roboto Slab', serif;
   color: #202124;
-  text-align: left;
-  font-size: 20px;
-  margin-top: 50px; }
+  text-align: center;
+  font-size: 20px; }
 
 .add-place-banner .sub-header {
   color: #666;
@@ -328,7 +327,8 @@ nav.navigation ul li a.active {
 
 @media only screen and (min-width: 768px) {
   .add-place-banner .header {
-    font-size: 30px; } }
+    font-size: 30px;
+    text-align: left; } }
 
 /* icons
   'partials/icons/_ionicons-variables',

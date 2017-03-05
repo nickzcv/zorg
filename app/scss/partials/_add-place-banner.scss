@@ -12,9 +12,8 @@
     width: 100%;
     font-family: 'Roboto Slab', serif;
     color: $main-dark;
-    text-align: left;
+    text-align: center;
     font-size: 20px;
-    margin-top: 50px;
   }
   .sub-header {
     color: #666;
@@ -43,6 +42,7 @@
   @media only screen and (min-width: 768px) {
     .header {
       font-size: 30px;
+      text-align: left;
     }
   }
 

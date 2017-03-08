@@ -58,7 +58,7 @@
 <section class="container-fluid settings-section">
   <div class="row settings">
     <div class="col-xs-6">
-      13 places match location: <a>Minsk</a> <span class="ion-ios-location-outline pointer"></span>
+      13 places in <a>Minsk</a> <span class="ion-ios-location-outline pointer"></span>
     </div>
     <div class="col-xs-6 text-right">
       <a>Sort by popularity <span class="ion-ios-arrow-down"></span></a>
@@ -67,21 +67,42 @@
 </section>
 <!-- /end setting section -->
 
-
-<section class="places-section">
-  <div>
-
+<!-- Places section -->
+<section class="container-fluid places-section">
+  <div class="row">
+    <div class="col-sm-4 col-md-3">
+      <!-- Filter -->
+      <div class="filter">
+        <div class="filter-header">
+          Search Filters
+        </div>
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search your favorite food...">
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox"> Sandwiches</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox"> Hot dog</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox"> Fast Food</label>
+          </div>
+          <div class="devider"></div>
+        </form>
+      </div>
+      <!-- /end filter -->
+    </div>
+    <div class="col-sm-8 col-md-9">
+      places here
+    </div>
   </div>
-
 </section>
-
+<!-- /end places section -->
 
 <!-- Footer section -->
-<footer class="footer">
-  <div class="hashtag">
-
-  </div>
-</footer>
+<footer class="footer"></footer>
 <!-- /end footer section -->
 
 
@@ -117,7 +138,7 @@
   <script src="js/lib/underscore-min.js"></script>
   <script src="js/lib/backbone.js"></script>
   <script src="js/lib/handlebars-v4.0.5.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/main.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRTLDlMQVjCYJDagsL99vgB72XzBH8mdg&libraries=places&callback=initAutocomplete" async defer></script>
 
 </body>

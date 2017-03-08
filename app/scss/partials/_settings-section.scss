@@ -1,8 +1,8 @@
 /* Welcome-section styles
 -------------------------------------------------- */
 .settings-section {
-  background: #fcfbf9;
-  border-bottom: 1px solid #e6e6e6;
+  background: $gray-light;
+  border-bottom: 1px solid $gray-dark;
 
   .container {
     // padding: 0;
@@ -10,27 +10,31 @@
 
   .settings {
     padding: 1rem 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
 
     .pointer {
-      color: $yellow;
+      color: $orange;
     }
   }
 
   a {
-    color: $yellow;
+    color: $orange;
   }
 
 
 
   /* Tablets */
   @media only screen and (min-width: 768px) {
+    .settings {
+      font-size: 1rem;
+    }
 
   }
 
 
   /* Desktop and larger */
   @media only screen and (min-width: 992px) {
+
 
   }
 

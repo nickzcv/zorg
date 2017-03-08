@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zakuski - places view 1</title>
+  <!-- CSS -->
+  <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+  <!-- custom styles -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/ionicons.min.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!-- Header section -->
+<header class="container-fluid">
+  <div class="row">
+    <!-- Logo section -->
+    <div class="col-md-3 logo">
+      <a href="/">Zakuski</a>
+    </div>
+    <!-- /end logo section -->
+    <!-- Navigation -->
+    <nav class="col-md-9 navigation hidden">
+      <ul>
+        <li><a class="active">Main</a></li>
+        <li><a>How it works</a></li>
+        <li><a>Add place</a></li>
+        <li><a>Login</a></li>
+      </ul>
+      <div class="languages">
+        <span class="flag eng"></span>
+        <span class="flag bel"></span>
+      </div>
+    </nav>
+    <!-- /end navigation -->
+  </div>
+  <div class="hamburger visible-xs">
+    <span class="icon ion-navicon"></span>
+  </div>
+
+</header>
+<!-- /end header section -->
+
+<!--
+<section class="container-fluid search-section">
+
+</section>
+-->
+
+
+<!-- Setting section -->
+<section class="container-fluid settings-section">
+  <div class="row settings">
+    <div class="col-xs-6">
+      13 places match location: <a>Minsk</a> <span class="ion-ios-location-outline pointer"></span>
+    </div>
+    <div class="col-xs-6 text-right">
+      <a>Sort by popularity <span class="ion-ios-arrow-down"></span></a>
+    </div>
+  </div>
+</section>
+<!-- /end setting section -->
+
+
+<section class="places-section">
+  <div>
+
+  </div>
+
+</section>
+
+
+<!-- Footer section -->
+<footer class="footer">
+  <div class="hashtag">
+
+  </div>
+</footer>
+<!-- /end footer section -->
+
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+      </div>
+      <div class="modal-body">
+        <p>Looks like no places in your current location...</p>
+        <p>Would you like to <a>add place</a>?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    <!-- /end Modal content-->
+  </div>
+</div>
+<!-- /end Modal -->
+
+
+
+  <!-- JS -->
+  <script src="js/lib/jquery-3.1.1.min.js"></script>
+  <script src="js/lib/bootstrap.min.js"></script>
+  <script src="js/lib/underscore-min.js"></script>
+  <script src="js/lib/backbone.js"></script>
+  <script src="js/lib/handlebars-v4.0.5.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRTLDlMQVjCYJDagsL99vgB72XzBH8mdg&libraries=places&callback=initAutocomplete" async defer></script>
+
+</body>
+</html>

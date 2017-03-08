@@ -1,0 +1,37 @@
+/* Welcome-section styles
+-------------------------------------------------- */
+.settings-section {
+  background: #fcfbf9;
+  border-bottom: 1px solid #e6e6e6;
+
+  .container {
+    // padding: 0;
+  }
+
+  .settings {
+    padding: 1rem 0;
+    font-size: 1rem;
+
+    .pointer {
+      color: $yellow;
+    }
+  }
+
+  a {
+    color: $yellow;
+  }
+
+
+
+  /* Tablets */
+  @media only screen and (min-width: 768px) {
+
+  }
+
+
+  /* Desktop and larger */
+  @media only screen and (min-width: 992px) {
+
+  }
+
+}

@@ -7,8 +7,13 @@
   height: 3rem; /* Set the fixed height of the footer here */
   background-color: $gray-light;
 
-  .hashtag {
-
+  .copyright {
+    float: right;
+    padding: 1rem;
+    font-weight: bold;
+    .glyphicon-copyright-mark {
+      font-size: 0.7rem;
+    }
   }
 
 

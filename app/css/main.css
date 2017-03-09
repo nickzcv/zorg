@@ -19,6 +19,9 @@ a {
 a:hover {
   text-decoration: none; }
 
+.form-control, .btn {
+  border-radius: 2px; }
+
 .pac-container .pac-item {
   cursor: pointer;
   padding: 0 8px;
@@ -102,6 +105,14 @@ header .hamburger.closeBtn span:before {
   /* SmartPhones */
   /* Tablets */
   /* Desktop and larger */ }
+
+.footer .copyright {
+  float: right;
+  padding: 1rem;
+  font-weight: bold; }
+
+.footer .copyright .glyphicon-copyright-mark {
+  font-size: 0.7rem; }
 
 /* Navigation styles
 -------------------------------------------------- */
@@ -281,10 +292,13 @@ nav.navigation ul li a.active {
 .places-section .filter .filter-header {
   background: #e8500e;
   line-height: 3rem;
-  text-align: center;
+  padding: 0 1rem;
   color: #fff;
   font-size: 1rem;
   border-bottom: 1px solid #ededed; }
+
+.places-section .filter .filter-header .ion-ios-settings {
+  padding-right: 10px; }
 
 .places-section .filter .devider {
   margin: 1rem 0;

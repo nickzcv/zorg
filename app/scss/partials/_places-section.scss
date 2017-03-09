@@ -10,10 +10,13 @@
     .filter-header {
       background: $orange;
       line-height: 3rem;
-      text-align: center;
+      padding: 0 1rem;
       color: #fff;
       font-size: 1rem;
       border-bottom: 1px solid $gray-dark;
+      .ion-ios-settings {
+        padding-right: 10px;
+      }
     }
     .devider {
       margin: 1rem 0;

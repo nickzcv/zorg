@@ -295,14 +295,36 @@ nav.navigation ul li a.active {
   padding: 0 1rem;
   color: #fff;
   font-size: 1rem;
-  border-bottom: 1px solid #ededed; }
+  border: 1px solid #ededed; }
 
 .places-section .filter .filter-header .ion-ios-settings {
   padding-right: 10px; }
 
+.places-section .filter .filter-header .filter-trigger {
+  font-size: 25px;
+  position: absolute;
+  top: 2px;
+  right: 2rem;
+  color: #fff;
+  cursor: pointer; }
+
+.places-section .filter .filter-header .filter-trigger.minusBtn span:before {
+  content: "\f2f4"; }
+
+.places-section .filter .filter-body {
+  display: none;
+  padding: 1rem 0; }
+
+.places-section .filter .filter-body .form-group {
+  padding: 0 1rem; }
+
 .places-section .filter .devider {
   margin: 1rem 0;
   border-bottom: 1px solid #ededed; }
+
+@media only screen and (min-width: 768px) {
+  .places-section .filter .filter-body {
+    display: block; } }
 
 /* Welcome-section styles
 -------------------------------------------------- */

@@ -75,30 +75,38 @@
       <div class="filter">
         <div class="filter-header">
           <span class="ion-ios-settings"></span> Search Filters
+          <div class="filter-trigger visible-xs">
+            <span class="icon ion-android-add"></span>
+          </div>
         </div>
-        <form>
+        <form class="filter-body">
           <!-- filter search -->
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Search your favorite food...">
           </div>
           <!-- filter types of food -->
-          <div class="checkbox">
-            <label><input type="checkbox"> Sandwiches</label>
+          <div class="form-group">
+            <div class="checkbox">
+              <label><input type="checkbox"> Sandwiches</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox"> Hot dog</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox"> Fast Food</label>
+            </div>
           </div>
-          <div class="checkbox">
-            <label><input type="checkbox"> Hot dog</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox"> Fast Food</label>
-          </div>
+
           <div class="devider"></div>
           <!-- filter food for -->
           <h5>food for</h5>
-          <div class="checkbox">
-            <label><input type="checkbox"> Delivery</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox"> Pickup</label>
+          <div class="form-group">
+            <div class="checkbox">
+              <label><input type="checkbox"> Delivery</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox"> Pickup</label>
+            </div>
           </div>
         </form>
       </div>
@@ -114,32 +122,6 @@
 <!-- Footer section -->
 <footer class="footer"></footer>
 <!-- /end footer section -->
-
-
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-      </div>
-      <div class="modal-body">
-        <p>Looks like no places in your current location...</p>
-        <p>Would you like to <a>add place</a>?</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-    <!-- /end Modal content-->
-  </div>
-</div>
-<!-- /end Modal -->
-
 
 
   <!-- JS -->

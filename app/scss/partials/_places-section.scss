@@ -13,9 +13,28 @@
       padding: 0 1rem;
       color: #fff;
       font-size: 1rem;
-      border-bottom: 1px solid $gray-dark;
+      border: 1px solid $gray-dark;
       .ion-ios-settings {
         padding-right: 10px;
+      }
+      .filter-trigger {
+        font-size: 25px;
+        position: absolute;
+        top: 2px;
+        right: 2rem;
+        color: #fff;
+        cursor: pointer;
+
+        &.minusBtn span:before {
+          content: "\f2f4";
+        }
+      }
+    }
+    .filter-body {
+      display: none;
+      padding: 1rem 0;
+      .form-group {
+        padding: 0 1rem;
       }
     }
     .devider {
@@ -35,7 +54,11 @@
 
   /* Tablets */
   @media only screen and (min-width: 768px) {
-
+    .filter {
+      .filter-body {
+        display: block;
+      }
+    }
 
   }
 

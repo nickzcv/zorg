@@ -13,12 +13,12 @@ $(function() {
 
 
   /*
-   * Shop category navigation handlers
+   * Filter section handler
    *
    */
   $('.filter-trigger').on('click', function() {
     $(this).toggleClass('minusBtn');
-    $('.filter-body').toggle(200);
+    $('.filter-body').toggleClass('hidden');
   });
 
 

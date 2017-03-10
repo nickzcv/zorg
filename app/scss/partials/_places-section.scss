@@ -5,15 +5,15 @@
 
   .filter {
     background: $gray-light;
-    border: 1px solid $gray-dark;
+    margin-bottom: 1rem;
 
     .filter-header {
       background: $orange;
       line-height: 3rem;
       padding: 0 1rem;
       color: #fff;
-      font-size: 1rem;
-      border: 1px solid $gray-dark;
+      font-size: 1.3rem;
+
       .ion-ios-settings {
         padding-right: 10px;
       }
@@ -31,10 +31,21 @@
       }
     }
     .filter-body {
-      display: none;
       padding: 1rem 0;
+      border: 1px solid $gray-dark;
+
       .form-group {
         padding: 0 1rem;
+      }
+      .form-control {
+        height: 40px;
+      }
+      h5 {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 0 1rem;
+        color: $omen-dark;
       }
     }
     .devider {
@@ -44,7 +55,39 @@
 
   }
 
+  .place {
+    width: 100%;
+    height: 300px;
+    background: $gray-light;
+    border: 1px solid $gray-dark;
 
+    .top-block {
+      position: relative;
+      height: 200px;
+      background: $main-dark url(../img/elements/wave-tile.png) repeat-x bottom;
+
+      .distance, .rating, .reviews-number{
+        display: inline-block;
+        position: absolute;
+        color: white;
+      }
+
+      .distance {
+        top: 1rem;
+        left: 1rem;
+      }
+      .rating {
+        left: 1rem;
+        bottom: 1rem;
+      }
+      .reviews-number {
+        right: 1rem;
+        bottom: 1rem;
+      }
+
+    }
+
+  }
 
   /* SmartPhones */
   @media only screen and (min-width: 450px) {
@@ -56,7 +99,9 @@
   @media only screen and (min-width: 768px) {
     .filter {
       .filter-body {
-        display: block;
+        &.hidden {
+          display: block !important; /* must be here due mobile filter*/
+        }
       }
     }
 

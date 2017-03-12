@@ -57,13 +57,14 @@
 
   .place {
     width: 100%;
-    height: 300px;
     background: $gray-light;
     border: 1px solid $gray-dark;
+    border-radius: 2px;
 
     .top-block {
       position: relative;
       height: 200px;
+      border-radius: 2px;
       background: $main-dark url(../img/elements/wave-tile.png) repeat-x bottom;
 
       .distance, .rating, .reviews-number{
@@ -71,20 +72,91 @@
         position: absolute;
         color: white;
       }
-
       .distance {
         top: 1rem;
         left: 1rem;
+        background: $orange;
+        border-radius: 2px;
+        padding: 0 5px;
       }
       .rating {
         left: 1rem;
         bottom: 1rem;
+
+        .icon {
+          font-size: 1.3rem;
+          color: $gold;
+        }
       }
       .reviews-number {
         right: 1rem;
         bottom: 1rem;
+        font-size: 0.7rem;
+        padding-bottom: 5px;
+        text-transform: uppercase;
       }
 
+    }
+    .middle-block {
+      overflow: hidden;
+      padding: 1rem;
+
+      .options {
+        float: left;
+        font-size: 35px;
+
+        .delivery-icon {
+          float: left;
+          width: 67px;
+          height: 40px;
+          margin: 5px;
+          background: url(../img/icons/delivery.svg) no-repeat;
+          background-size: contain;
+          background-position: center;
+          &:hover {
+            cursor: pointer;
+            background: url(../img/icons/delivery-hover.svg) no-repeat;
+            background-size: contain;
+            background-position: center;
+          }
+        }
+
+      }
+      .btn {
+        float: right;
+        padding: 10px 15px;
+        border: 2px dashed $orange;
+        border-radius: 4px;
+        color: $orange;
+      }
+    }
+    .bottom-block {
+      overflow: hidden;
+      border-top: 1px solid $gray-dark;
+
+      .logo {
+        float: left;
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        border: 1px solid $gray-dark;
+        margin: 5px;
+      }
+      .info {
+        margin: 5px 70px 5px 5px;
+
+        .title {
+          font-size: 1rem;
+          padding-bottom: 5px;
+        }
+        .address {
+          color: $text-gray;
+        }
+      }
+      .likes{
+        // todo add likes
+        border-left: 1px solid $gray-dark;
+      }
     }
 
   }

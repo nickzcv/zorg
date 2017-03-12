@@ -183,6 +183,9 @@
   /* Desktop */
   @media only screen and (min-width: 992px) {
     .filter {
+      .filter-header .filter-trigger {
+        display: none;
+      }
       .filter-body {
         &.hidden {
           display: block !important; /* must be here due mobile filter*/

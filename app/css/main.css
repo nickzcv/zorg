@@ -440,6 +440,8 @@ nav.navigation ul li a.active {
     margin: 0 0 1.5rem 0; } }
 
 @media only screen and (min-width: 992px) {
+  .places-section .filter .filter-header .filter-trigger {
+    display: none; }
   .places-section .filter .filter-body.hidden {
     display: block !important;
     /* must be here due mobile filter*/ }

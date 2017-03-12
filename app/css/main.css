@@ -46,6 +46,7 @@ a:hover {
 header {
   background: #202124;
   /* Tablets */
+  /* Desktop */
   /* Desktop and larger */ }
 
 header .logo {
@@ -92,6 +93,10 @@ header .hamburger.closeBtn span:before {
     background: url(../img/zakuski.svg) no-repeat;
     background-size: contain;
     background-position: center; } }
+
+@media only screen and (min-width: 1200px) {
+  header .logo {
+    text-align: left; } }
 
 /* Welcome-section styles
 -------------------------------------------------- */
@@ -283,11 +288,12 @@ nav.navigation ul li a.active {
   padding: 1.5rem 1rem;
   /* SmartPhones */
   /* Tablets */
+  /* Desktop */
   /* Desktop and larger */ }
 
 .places-section .filter {
   background: #fcfbf9;
-  margin-bottom: 1rem; }
+  margin-bottom: 1.5rem; }
 
 .places-section .filter .filter-header {
   background: #e8500e;
@@ -333,6 +339,8 @@ nav.navigation ul li a.active {
 
 .places-section .place {
   width: 100%;
+  max-width: 400px;
+  margin: 0 auto 1.5rem;
   background: #fcfbf9;
   border: 1px solid #ededed;
   border-radius: 2px; }
@@ -413,7 +421,7 @@ nav.navigation ul li a.active {
   margin: 5px; }
 
 .places-section .place .bottom-block .info {
-  margin: 5px 70px 5px 5px; }
+  margin: 5px; }
 
 .places-section .place .bottom-block .info .title {
   font-size: 1rem;
@@ -422,13 +430,36 @@ nav.navigation ul li a.active {
 .places-section .place .bottom-block .info .address {
   color: #999; }
 
-.places-section .place .bottom-block .likes {
-  border-left: 1px solid #ededed; }
+@media only screen and (min-width: 550px) {
+  .places-section .place {
+    float: left;
+    width: 48%;
+    margin: 0 1rem 1.5rem 0; }
+  .places-section .place:nth-child(2n) {
+    float: right;
+    margin: 0 0 1.5rem 0; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .places-section .filter .filter-body.hidden {
     display: block !important;
-    /* must be here due mobile filter*/ } }
+    /* must be here due mobile filter*/ }
+  .places-section .place {
+    float: left;
+    width: 47%;
+    margin: 0 1rem 1.5rem 0; }
+  .places-section .place:nth-child(2n) {
+    float: left;
+    margin: 0 1rem 1.5rem 0; } }
+
+@media only screen and (min-width: 1200px) {
+  .places-section .tv-grid {
+    max-width: 27rem; }
+  .places-section .filter {
+    max-width: 25rem; }
+  .places-section .place {
+    margin: 0 1.5rem 1.5rem 0; }
+  .places-section .place:nth-child(2n) {
+    margin: 0 1.5rem 1.5rem 0; } }
 
 /* Welcome-section styles
 -------------------------------------------------- */

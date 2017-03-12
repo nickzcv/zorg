@@ -5,7 +5,7 @@
 
   .filter {
     background: $gray-light;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 
     .filter-header {
       background: $orange;
@@ -54,9 +54,10 @@
     }
 
   }
-
   .place {
     width: 100%;
+    max-width: 400px;
+    margin: 0 auto 1.5rem;
     background: $gray-light;
     border: 1px solid $gray-dark;
     border-radius: 2px;
@@ -143,7 +144,7 @@
         margin: 5px;
       }
       .info {
-        margin: 5px 70px 5px 5px;
+        margin: 5px;
 
         .title {
           font-size: 1rem;
@@ -153,22 +154,34 @@
           color: $text-gray;
         }
       }
-      .likes{
-        // todo add likes
-        border-left: 1px solid $gray-dark;
-      }
     }
 
   }
 
   /* SmartPhones */
-  @media only screen and (min-width: 450px) {
+  @media only screen and (min-width: 550px) {
+    .place {
+      float: left;
+      width: 48%;
+      margin: 0 1rem 1.5rem 0;
 
+      &:nth-child(2n) {
+        float: right;
+        margin: 0 0 1.5rem 0;
+      }
+    }
   }
 
 
   /* Tablets */
   @media only screen and (min-width: 768px) {
+
+
+  }
+
+
+  /* Desktop */
+  @media only screen and (min-width: 992px) {
     .filter {
       .filter-body {
         &.hidden {
@@ -176,13 +189,34 @@
         }
       }
     }
+    .place {
+      float: left;
+      width: 47%;
+      margin: 0 1rem 1.5rem 0;
 
+      &:nth-child(2n) {
+        float: left;
+        margin: 0 1rem 1.5rem 0;
+      }
+    }
   }
-
 
   /* Desktop and larger */
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 1200px) {
+    .tv-grid {
+      max-width: 27rem;
+    }
+    .filter {
+      max-width: 25rem;
+    }
+    .place {
+      margin: 0 1.5rem 1.5rem 0;
 
+      &:nth-child(2n) {
+        margin: 0 1.5rem 1.5rem 0;
+      }
+    }
   }
+
 
 }

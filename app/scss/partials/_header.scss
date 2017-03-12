@@ -50,7 +50,7 @@ header {
   }
 
 
-  /* Desktop and larger */
+  /* Desktop */
   @media only screen and (min-width: 992px) {
     .logo a{
       display: inline-block;
@@ -62,5 +62,11 @@ header {
     }
   }
 
+  /* Desktop and larger */
+  @media only screen and (min-width: 1200px) {
+    .logo {
+      text-align: left;
+    }
+  }
 
 }
